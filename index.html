@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OptiMood URL Redirector</title>
+</head>
+<body>
+  <p>Please wait, we're redirecting you. If the redirection does not work, please <a href="#" id="link">click here</a>.</p>
+  <script>
+  let url = `unitydl:optimood${window.location.hash}`
+  let link = document.getElementById('link')
+  link.href = url
+  window.location = url
+  </script>
+</body>
